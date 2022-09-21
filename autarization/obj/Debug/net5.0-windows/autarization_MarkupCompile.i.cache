@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ErikRotar\autarizationWindows-master\autarization\obj\Debug\net5.0-windows\
+D:\Erik is-31\autarizationWindows-master\autarization\obj\Debug\net5.0-windows\
 autarization
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\ErikRotar\autarizationWindows-master\autarization\App.xaml
-6385137276
+D:\Erik is-31\autarizationWindows-master\autarization\App.xaml
+7949426684
 
-12-491218714
+15-1840813574
 193-1891726104
-ResourceDictionaries\ColorDictionary.xaml;ResourceDictionaries\StyleDictionary.xaml;View\Windows\AdminWindow.xaml;View\Windows\AuthorizationWindow.xaml;View\Windows\BuyerWindow.xaml;View\Windows\ManagerWindow.xaml;
+ResourceDictionaries\ColorDictionary.xaml;ResourceDictionaries\StyleDictionary.xaml;View\Pages\UsersPage.xaml;View\Windows\AdminWindow.xaml;View\Windows\AuthorizationWindow.xaml;View\Windows\BuyerWindow.xaml;View\Windows\ManagerWindow.xaml;
 
 True
 

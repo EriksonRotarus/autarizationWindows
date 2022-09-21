@@ -17,7 +17,7 @@ namespace autarization.Core
             {
                 string[] props = line.Split(';');
 
-                yield return new User(props[0], props[1], props[2], Convert.ToInt32(props[3]), Convert.ToDecimal(props[4]));
+                yield return new User(Convert.ToInt32(props[0]), props[1], props[2], props[3], Convert.ToDateTime(props[4]), Convert.ToDecimal(props[5]));
             }
         }
 

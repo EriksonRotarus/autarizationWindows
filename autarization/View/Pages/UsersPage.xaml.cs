@@ -1,5 +1,4 @@
-﻿using autarization.View.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,24 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
+using autarization.Core;
 
-namespace autarization.View.Windows
+namespace autarization.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AdminWindow.xaml
+    /// Логика взаимодействия для UsersPage.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class UsersPage : Page
     {
-        public AdminWindow()
+        public UsersPage()
         {
             InitializeComponent();
-
-        }
-
-        private void btnLoadUsers_Click(object sender, RoutedEventArgs e)
-        {
-            mainFrame.Navigate(new UsersPage());
+            lvUsers.ItemsSource = UserParser.ParseFile("user2.txt");
         }
     }
 }

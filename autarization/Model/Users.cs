@@ -8,41 +8,35 @@ namespace Autorization.Model
 {
     public class User
     {
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
-        public int BordDate { get; set; }
+        public DateTime BornDate { get; set; }
         public decimal Salary { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public Role Role { get; set; }
 
         public User()
         {
+            Id = 0;
             FirstName = string.Empty;
             MiddleName = string.Empty;
             LastName = string.Empty;
-            BordDate = int.MaxValue;
-            Salary = decimal.MinValue;
-            Login = string.Empty;
-            Password = string.Empty;
-            Role = Role.Unknown;
+            BornDate = DateTime.MinValue;
+            Salary = 0;
         }
 
-        public User(string firstName, string middleName, string lastName, int borddate, decimal salary)
+        public User(int id, string firstName, string middleName, string lastName, DateTime bornDate, decimal salary)
         {
+            Id = id;
             FirstName = firstName;
             MiddleName = middleName;
             LastName = lastName;
-            BordDate = borddate;
+            BornDate = bornDate;
             Salary = salary;
-            
-
         }
         public override string ToString()
         {
-            return $"ФИО: {FirstName} {MiddleName} {LastName}\nДата рождения: {BordDate}\n" + $"Зарплата:{Salary}";
+            return $":{Id} \n ФИО: {FirstName} {MiddleName} {LastName}\nДата рождения: {BornDate}\n" + $"Зарплата:{Salary}";
         }
     }
-
 }

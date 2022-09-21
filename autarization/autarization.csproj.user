@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\Pages\UsersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Windows\AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ResourceDictionaries\StyleDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Pages\UsersPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Windows\AdminWindow.xaml">

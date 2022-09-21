@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autorization.Core;
+using Autorization.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +25,33 @@ namespace autarization.View.Windows
         {
             InitializeComponent();
 
-            _user = UserParser.ParserFile("users1.txt").ToList();
+            
+
+           // _user = UserParser.ParserFile("users2.txt").ToList();
         }
         private void btnSingin_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                if (tbLogin.Text == string.Empty || tbPassword.Password == string.Empty)
+                {
+                    throw new Exception("Введите логин или пароль!");
+                }
 
+                if (UserLogic.Validate(tbLogin.Text, tbPassword.Password))
+                {
+                    new AdminWindow().Show();
+                    Close();
+                }
+                else
+                {
+                    throw new Exception("Неверный логин или пароль!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

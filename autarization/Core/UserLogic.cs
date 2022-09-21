@@ -9,6 +9,10 @@ namespace Autorization.Core
 {
     class UserLogic
     {
-        public static User FindUserByFirstName(List<User> users, string FirstName) => users.FirstOrDefault(user => user.FirstName == FirstName);
+        public static User FindUserByFirstName(List<User> users, string FirstName) => 
+            users.FirstOrDefault(user => user.FirstName == FirstName);
+
+        public static bool Validate(string login, string password) =>
+            login == "admin" && password == "admin";
     }
 }

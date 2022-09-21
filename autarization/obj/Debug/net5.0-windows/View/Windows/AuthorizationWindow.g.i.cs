@@ -78,7 +78,7 @@ namespace autarization.View.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/autarization;component/view/windows/authorizationwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/autarization;V1.0.0.0;component/view/windows/authorizationwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Windows\AuthorizationWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
